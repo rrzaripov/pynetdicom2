@@ -1,9 +1,7 @@
 version: 1.0.{build}
 
 environment:
-
   matrix:
-
    - PYTHON: "c:\\python27"
    - PYTHON: "c:\\python27-x64"
    - PYTHON: "c:\\python36"
