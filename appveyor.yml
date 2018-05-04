@@ -1,4 +1,4 @@
 version: 1.0.{build}
 
-test_script:
+build_script:
   - tox
