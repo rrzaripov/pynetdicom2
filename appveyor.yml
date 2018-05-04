@@ -13,4 +13,4 @@ install:
 build: off
 
 test_script:
-  - "%PYTHON%\\python.exe -m unittest discover -s netdicom2\test"
+  - "%PYTHON%\\python.exe -m unittest discover -s netdicom2\\test"
