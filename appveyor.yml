@@ -1,4 +1,18 @@
 version: 1.0.{build}
 
-build_script:
-  - tox
+environment:
+
+  matrix:
+
+   - PYTHON: "c:\\python27"
+   - PYTHON: "c:\\python27-x64"
+   - PYTHON: "c:\\python36"
+   - PYTHON: "c:\\python36-x64"
+
+install:
+ - %PYTHON%\\python.exe -m pip install -r requirements.txt
+
+build: off
+
+test_script:
+  - %PYTHON%\\python.exe -m unittest discover -s netdicom2\test
