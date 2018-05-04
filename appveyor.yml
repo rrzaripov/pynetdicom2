@@ -7,6 +7,9 @@ environment:
    - PYTHON: "c:\\python36"
    - PYTHON: "c:\\python36-x64"
 
+install:
+ - "%PYTHON%\\python.exe -m pip install -r requirements.txt"
+
 build_script:
   - "%PYTHON%\\python.exe setup.py install"
 
