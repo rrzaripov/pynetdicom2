@@ -8,9 +8,9 @@ environment:
    - PYTHON: "c:\\python36-x64"
 
 install:
- - %PYTHON%\\python.exe -m pip install -r requirements.txt
+ - "%PYTHON%\\python.exe -m pip install -r requirements.txt"
 
 build: off
 
 test_script:
-  - %PYTHON%\\python.exe -m unittest discover -s netdicom2\test
+  - "%PYTHON%\\python.exe -m unittest discover -s netdicom2\test"
